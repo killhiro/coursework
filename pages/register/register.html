@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../assets/style/global.css" />
+		<link rel="stylesheet" href="./register.css" />
+		<title>Login</title>
+	</head>
+	<body>
+		<form id="registerForm">
+			<h1>Регистрация</h1>
+			<label for="username">Имя пользователя</label><br />
+			<input
+				class="def-input"
+				type="text"
+				id="username"
+				name="username"
+			/><br /><br />
+			<label for="email">Email</label><br />
+			<input
+				class="def-input"
+				type="email"
+				id="email"
+				name="email"
+			/><br /><br />
+			<label for="password">Пароль</label><br />
+			<input
+				class="def-input"
+				type="password"
+				id="password"
+				name="password"
+			/><br /><br />
+			<button class="red-button reg-btn" type="submit">
+				Зарегистрироваться
+			</button>
+			<p id="outer">
+				Уже есть аккаунт? <a href="../login/login.html">Войдите здесь</a>
+			</p>
+		</form>
+	</body>
+</html>
