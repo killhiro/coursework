@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../../assets/style/global.css" />
-		<link rel="stylesheet" href="./recipes.css" />
-		<title>Рецепты</title>
+		<link rel="stylesheet" href="./article.css" />
+		<title>Статья</title>
 	</head>
 	<body>
 		<header class="flex align-center justify-between">
@@ -18,17 +18,174 @@
 			</div>
 			<nav class="flex">
 				<a href="#catalog">Каталог</a>
-				<a class="active" href="#">Рецепты</a>
-				<a href="../articles/articles.html">Статьи</a>
+				<a href="#">Рецепты</a>
+				<a class="active" href="../articles/articles.html">Статьи</a>
 			</nav>
 			<div class="user-bar">
 				<div class="user-logo"></div>
 				<div class="burger"></div>
 			</div>
 		</header>
+
 		<main class="flex justify-center">
-			<h1>Recipe</h1>
+			<div class="article-window flex flex-column gap2">
+				<section class="article-filters flex flex-column gap">
+					<button class="yellow-button">написать статью</button>
+					<div class="filters flex flex-column gap">
+						<div class="filter flex gap align-center justify-between">
+							<span>зож</span>
+							<div class="row"></div>
+						</div>
+						<div class="filter flex gap align-center justify-between">
+							<span>лучшие статьи</span>
+							<div class="row"></div>
+						</div>
+						<div class="filter flex gap align-center justify-between">
+							<span>набор массы</span>
+							<div class="row"></div>
+						</div>
+					</div>
+				</section>
+
+				<div
+					style="
+						background-image: url(../../assets/picture/CardsMain/image1.svg);
+					"
+					class="article-image"
+				>
+					<div class="back-row"></div>
+
+					<div class="favorites">
+						<div class="heart-icon"></div>
+						<div class="fav-count">100</div>
+					</div>
+				</div>
+				<div class="text-content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+					iste, tempore corrupti laboriosam beatae nam iure fugiat enim labore
+					eos temporibus id, sunt recusandae consequuntur facilis error? Culpa,
+					aut aliquid.
+				</div>
+				<div class="tags">
+					<div class="tag">
+						<div class="tag-icon"></div>
+						<div class="tag-name"></div>
+					</div>
+				</div>
+				<div class="like-it flex align-center flex-column gap2">
+					<div class="buttons flex gap">
+						<button class="to-favorites flex gap shadow-button align-center">
+							в избранное
+							<div class="favorites">
+								<div class="heart-icon"></div>
+								<div class="fav-count">100</div>
+							</div>
+						</button>
+						<button class="shadow-button flex align-center justify-center gap">
+							комментарии
+							<div class="contact" id="comm-icon"></div>
+						</button>
+					</div>
+					<div class="share flex flex-column gap">
+						<h2>поделитесь с друзьями</h2>
+						<div class="share-links flex gap justify-center">
+							<div class="contact" id="vk"></div>
+							<div class="contact" id="tg"></div>
+							<div class="contact" id="copy"></div>
+						</div>
+					</div>
+				</div>
+				<div class="check-more">
+					<h1>смотрите также</h1>
+					<div class="article-list flex flex-column gap align-center">
+						<div class="article">
+							<div
+								style="
+									background-image: url(../../assets/picture/CardsMain/image1.svg);
+								"
+								class="article-image"
+							>
+								<div class="favorites">
+									<div class="heart-icon"></div>
+									<div class="fav-count">100</div>
+								</div>
+								<h1 class="article-title">топ 10 овощей для вашего рациона</h1>
+							</div>
+						</div>
+						<div class="article">
+							<div
+								style="
+									background-image: url(../../assets/picture/CardsMain/image1.svg);
+								"
+								class="article-image"
+							>
+								<div class="favorites">
+									<div class="heart-icon"></div>
+									<div class="fav-count">100</div>
+								</div>
+								<h1 class="article-title">топ 10 овощей для вашего рациона</h1>
+							</div>
+						</div>
+						<div class="article">
+							<div
+								style="
+									background-image: url(../../assets/picture/CardsMain/image1.svg);
+								"
+								class="article-image"
+							>
+								<div class="favorites">
+									<div class="heart-icon"></div>
+									<div class="fav-count">100</div>
+								</div>
+								<h1 class="article-title">топ 10 овощей для вашего рациона</h1>
+							</div>
+						</div>
+						<button class="yellow-button">все статьи</button>
+					</div>
+				</div>
+				<div class="comments flex flex-column gap2">
+					<h1 class="flex">
+						Комментарии(
+						<div class="comm-count"></div>
+						)
+					</h1>
+					<div class="comm-input flex gap justify-between">
+						<div class="user-logo"></div>
+						<input placeholder="написать комментарий" type="text" />
+						<button class="send-comm"></button>
+					</div>
+					<div class="comment-list flex flex-column gap">
+						<div class="comment">
+							<div class="author flex justify-between">
+								<div class="author-info flex gap">
+									<div class="user-logo"></div>
+									<div class="author-data">
+										<div class="name">Александр</div>
+										<div class="r-text rank">мастер вкуса</div>
+										<div class="comment-text">шикарно</div>
+									</div>
+								</div>
+								<div class="date">вчера</div>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="author flex justify-between">
+								<div class="author-info flex gap">
+									<div class="user-logo"></div>
+									<div class="author-data">
+										<div class="name">Александр</div>
+										<div class="r-text rank">мастер вкуса</div>
+										<div class="comment-text">шикарно</div>
+									</div>
+								</div>
+								<div class="date">вчера</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
+
 		<footer class="flex justify-center">
 			<div class="footer-content flex align-center flex-column gap2">
 				<div class="contacts flex gap">
