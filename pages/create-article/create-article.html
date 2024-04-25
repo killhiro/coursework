@@ -41,6 +41,13 @@
 					rows="10"
 					placeholder="текст"
 				></textarea>
+				<section class="flex gap justify-between" id="tags">
+					<div class="tag">#Овощи</div>
+					<div class="tag">#Мясо</div>
+					<div class="tag">#ЕдаДляСтудента</div>
+					<div class="tag">#БыстроИВкусно</div>
+					<div class="tag">#ЗОЖ</div>
+				</section>
 				<button class="yellow-button">написать</button>
 			</form>
 		</main>
@@ -71,5 +78,14 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			const tags = document.querySelectorAll('.tag')
+
+			tags.forEach(tag => {
+				tag.addEventListener('click', () => {
+					tag.classList.toggle('active')
+				})
+			})
+		</script>
 	</body>
 </html>

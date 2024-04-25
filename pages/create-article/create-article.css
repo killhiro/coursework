@@ -48,3 +48,22 @@ label {
 	left: -50px;
 	top: 88px;
 }
+#tags {
+	width: 100%;
+}
+.tag {
+	width: fit-content;
+	border-radius: var(--radius);
+	padding: 20px;
+	box-shadow: var(--bx-gray);
+	cursor: pointer;
+	transition: var(--transition);
+	font-family: MontBold;
+}
+.tag:hover {
+	transform: translateY(-5px);
+}
+.tag.active {
+	background-color: #ea5455;
+	color: white;
+}

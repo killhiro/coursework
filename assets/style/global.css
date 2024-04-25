@@ -383,6 +383,24 @@ footer {
 .pick-picture:hover {
 	opacity: 0.5;
 }
+.delete-icon {
+	background-image: url(../picture/delete-icon.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	transition: var(--transition);
+	border-radius: var(--radius);
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 5;
+}
+.delete-icon:hover {
+	filter: drop-shadow(0px 0px 8px #ea545488);
+}
 /* tools */
 .r-text {
 	color: #ea5455;
