@@ -1,0 +1,14 @@
+main {
+	max-width: 514px;
+}
+.search-container button {
+	height: 54px;
+	font-size: 100%;
+}
+
+.avatar {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: lightgrey;
+}

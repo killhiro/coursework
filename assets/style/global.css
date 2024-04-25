@@ -112,17 +112,6 @@ input {
 .favorites .fav-count {
 	font-size: 1.2em;
 }
-.heart-icon {
-	background-image: url(../../assets/picture/heart.svg);
-	width: 25px;
-	height: 25px;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.heart-icon.active {
-	background-image: url(../../assets/picture/heart-filled.svg);
-}
 .search-card {
 	position: relative;
 }
@@ -358,6 +347,17 @@ footer {
 	width: 0.3em;
 	height: 0.3em;
 	background-image: url(../../assets/picture/comm-icon.svg);
+}
+.heart-icon {
+	background-image: url(../../assets/picture/heart.svg);
+	width: 25px;
+	height: 25px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.heart-icon.active {
+	background-image: url(../../assets/picture/heart-filled.svg);
 }
 .back-row {
 	background-image: url(../../assets/picture/yellow-row.svg);

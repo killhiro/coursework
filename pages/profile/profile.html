@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../../assets/style/global.css" />
+		<link rel="stylesheet" href="./profile.css" />
 		<title>Рецепт</title>
 	</head>
 
@@ -26,7 +27,36 @@
 				<div class="burger"></div>
 			</div>
 		</header>
-
+		<main>
+			<section class="profile flex align-center flex-column gap3">
+				<div class="profile-header flex flex-column align-center gap">
+					<div alt="User Avatar" class="user-logo"></div>
+					<h1 class="name flex">
+						@
+						<div class="user-name">killhiro</div>
+					</h1>
+					<p class="r-text rank">мастер вкуса</p>
+				</div>
+				<div class="actions flex gap align-center">
+					<button class="yellow-button">написать статью</button>
+					<button class="shadow-button fav-button flex align-center">
+						избранное
+						<div class="heart-icon active" />
+					</button>
+					<button class="yellow-button">поделиться рецептом</button>
+				</div>
+				<div class="stats flex gap4">
+					<div class="stat">
+						<h2>Статьи</h2>
+						<p>10</p>
+					</div>
+					<div class="stat">
+						<h2>Рецепты</h2>
+						<p>20</p>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="flex justify-center">
 			<div class="footer-content flex align-center flex-column gap2">
 				<div class="contacts flex gap">
