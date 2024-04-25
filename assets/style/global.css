@@ -73,6 +73,15 @@ input {
 	font-size: 20pt;
 	padding: 0 20px;
 }
+.invis-input {
+	text-transform: uppercase;
+	outline: none;
+	background: transparent;
+}
+.invis-input::placeholder {
+	opacity: 0.5;
+	color: var(--gray);
+}
 .search-card {
 	cursor: pointer;
 	overflow: hidden;
@@ -359,6 +368,20 @@ footer {
 	background-repeat: no-repeat;
 	transform: rotate(90deg);
 	cursor: pointer;
+}
+.pick-picture {
+	background-image: url(../../assets/picture/pick-picture.svg);
+	width: 25px;
+	height: 25px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(90deg);
+	cursor: pointer;
+	transition: var(--transition);
+}
+.pick-picture:hover {
+	opacity: 0.5;
 }
 /* tools */
 .r-text {

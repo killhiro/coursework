@@ -1,0 +1,50 @@
+form {
+	margin: auto;
+	width: 50%;
+	position: relative;
+}
+form input {
+	width: 100%;
+	padding: 20px 0;
+	font-size: 20pt;
+	font-family: MontBold;
+}
+form textarea {
+	width: 100%;
+	background: transparent;
+	outline: none;
+	resize: none;
+	border: none;
+	font-size: 15pt;
+	font-family: Mont;
+}
+form textarea::placeholder {
+	color: var(--gray);
+}
+form button {
+	margin-left: auto;
+}
+#picture-input {
+	display: none;
+}
+.picture-zone {
+	display: none;
+	width: 100%;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.picture-zone.active {
+	display: block;
+}
+.back-row {
+	position: absolute;
+	left: -50px;
+	top: 23px;
+}
+label {
+	position: absolute;
+	left: -50px;
+	top: 88px;
+}

@@ -1,3 +1,6 @@
+main {
+	top: 0;
+}
 .cards {
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -7,12 +10,12 @@
 	width: var(--window-width);
 	margin-top: var(--mt);
 }
-.card {
+.row .card {
 	position: relative;
-	min-width: 360px;
-	min-height: 360px;
-	max-width: 360px;
-	max-height: 360px;
+	min-width: 300px;
+	min-height: 300px;
+	max-width: 300px;
+	max-height: 300px;
 	background-color: green;
 	cursor: pointer;
 	border-radius: var(--radius);
@@ -22,6 +25,11 @@
 	overflow: hidden;
 	transition: var(--transition);
 	box-shadow: 0px -50px 30px rgba(0, 0, 0, 0.3) inset;
+}
+.card.huge {
+	width: 100%;
+	min-width: auto;
+	max-width: 100%;
 }
 .card:hover h1 {
 	transition: all ease 1s;
@@ -56,4 +64,27 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+
+.recipe-filters {
+	min-width: 200px;
+	max-width: 250px;
+}
+.recipe-filters button {
+	width: 100%;
+	min-width: max-content;
+	height: 60px;
+	font-size: 100%;
+}
+.filters {
+	position: relative;
+}
+.filter {
+	width: 100%;
+	min-width: fit-content;
+}
+.filter span {
+	text-transform: uppercase;
+	font-family: MontMedium;
+	font-size: 20px;
 }
